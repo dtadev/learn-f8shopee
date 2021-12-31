@@ -981,7 +981,8 @@
     padding-top: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: top-center;
+    background-position: center;
+    object-fit: contain;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
 }
