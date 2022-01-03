@@ -1,9 +1,6 @@
 /* Mobi & Tablet */
 @media (max-width: 1023px) {
-    :root{
-        --header-height: 68px;
-        --navbar-height: 0px;
-    }
+    
     .hide-on-mobi-tablet{
         display: none;
     }
@@ -42,7 +39,7 @@
     /* Tự code */
     .header-mobi-bar{
         display: flex;
-        /* margin-top: 8px; */
+        margin-top: 8px;
     }
 
     .footer__policy{
@@ -78,6 +75,10 @@
 /* tablet */
 
 @media (min-width: 740px) and (max-width: 1023px) {
+    :root{
+        --header-height: 68px;
+        --navbar-height: 0px;
+    }
     .hide-on-tablet{
         display: none;
     }
@@ -101,6 +102,10 @@
 /* MObi */
 
 @media (max-width: 739px) {
+    :root{
+        --header-height: 54px;
+        --navbar-height: 0px;
+    }
     .hide-on-mobi{
         display: none;
     }
@@ -164,6 +169,26 @@
 
     .footer__content{
         padding: 0 16px;
+    }
+    .footer__heading{
+        text-align: center;
+    }
+
+    .footer__download,
+    .footer__item-link{
+        justify-content: center;
+    }
+
+    .footer__download-apps{
+        flex: unset;
+    }
+    .footer__download-app-link{
+        display: block;
+        padding: 8px;
+    }
+
+    .header__search-option{
+        top: calc(180% - 8px);
     }
 }
 
