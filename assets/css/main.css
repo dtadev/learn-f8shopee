@@ -494,6 +494,7 @@
 /*  */
 .header__logo{
     width: 200px;
+    -webkit-tap-highlight-color: transparent; /*bõ highlight khi tap khi mobi*/
 }
 
 .header__logo-link{
@@ -541,6 +542,7 @@
 .header__cart{
     width: 150px;
     text-align: center;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header__cart-wrap{
@@ -986,6 +988,63 @@
 
 .category-item__link:hover{
     color: var(--primary-color);
+}
+
+/* MObi catagory */
+
+.mobi-category{
+    display: none;
+}
+.mobi-category__list{
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.mobi-category__list::-webkit-scrollbar{
+    display: none;
+}
+.mobi-category__item{
+    flex-shrink: 0;
+    margin-right: 12px;
+}
+
+
+.mobi-category__item:nth-of-type(3n + 1) .mobi-category__link{
+    background-color: #87afd8;
+}
+.mobi-category__item:nth-of-type(3n + 2) .mobi-category__link{
+    background-color: #76c9bd;
+}
+.mobi-category__item:nth-of-type(3n) .mobi-category__link{
+    background-color: #88cf81;
+}
+
+
+.mobi-category__link{
+    --line-height: 2rem;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.3rem;
+    line-height: calc(var(--line-height) * 2);
+    height: calc(var(--line-height) * 2);
+    overflow: hidden ;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+
+    /* xử lý tên quá dài vẫn còn lỗi */
+    display: -webkit-box;
+    -webkit-box-orient:vertical ;
+    -webkit-line-clamp: 2;
+    min-width: 110px;
+    border-radius: 4px;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /*HOME sort + filter*/
