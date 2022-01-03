@@ -436,6 +436,10 @@
 }
 
 /*  */
+
+.header-mobi-bar{
+    display: none;
+}
 .header__mobi-search{
     padding: 0 12px;
 }
@@ -443,16 +447,16 @@
 .header__mobi-search-icon{
     font-size: 2.6rem;
     color: var(--white-color);
-
 }
 
-/* mobi navbar */
+/* mobi navbar tự code */
+
 
 .header__mobi-navbar-icon{
     font-size: 2.6rem;
     color: var(--white-color);
     padding: 0 6px;
-    margin: 0 6px 0 12px;
+    margin: 0 6px 0 8px;
 }
 #mobi-navbar-checkbox:checked ~ .header-mobi-navbar {
     display: flex;
@@ -469,8 +473,6 @@
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.05);
 
 }
-
-
 .header-mobi-navbar-list{
     list-style: none;
     margin: 0;
@@ -920,6 +922,10 @@
 }
 
 /*app container*/
+.app{
+    overflow: hidden;
+}
+
 
 .app__container{
     background-color: #f5f5f5;
@@ -1258,6 +1264,7 @@ i.home-product-item__like-icon-fill{
 
 .home-product__pagination{
     margin: 40px 0 32px;
+    padding-left: 0;
 }
 
 
