@@ -133,11 +133,15 @@
         display: none;
     }
     @keyframes mobiSearchIn {
-        from{
+        0%{
             opacity: 0;
             top:calc(var(--header-height)/ 2);
         }
-        to{
+        60%{
+            opacity: 0.5;
+            top: var(--header-height);
+        }
+        100%{
             opacity: 1;
             top: var(--header-height);
         }
