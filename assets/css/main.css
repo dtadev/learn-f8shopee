@@ -460,8 +460,11 @@
     margin: 0 6px 0 8px;
     -webkit-tap-highlight-color: transparent;
 }
-#mobi-navbar-checkbox:checked ~ .header-mobi-navbar {
+#mobi-navbar-checkbox:checked ~ .header-mobi-navbar{
     display: flex;
+}
+#mobi-navbar-checkbox:checked ~ .header__mobi-overlay{
+    display: block;
 }
 
 .header-mobi-navbar{
@@ -470,7 +473,7 @@
     /* width: 300px; */
     position: absolute;
     top: var(--header-height);
-    z-index: 2;
+    z-index: 6;
     background-color: var(--white-color);
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.05);
 
@@ -492,6 +495,18 @@
 
 .header-mobi-navbar-link:hover{
     color: var(--primary-color);
+}
+
+.header__mobi-overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    display: none;
+    animation: fadeIn ease-in 0.5s;
 }
 
 /*  */
